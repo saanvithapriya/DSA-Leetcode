@@ -12,14 +12,13 @@ class Solution {
 public:
     ListNode* findMiddle(ListNode* head){
         ListNode* slow = head;
-        ListNode* fast = head;
+        ListNode* fast = head->next;
         ListNode* prev = nullptr;
         while(fast!=nullptr && fast->next!=nullptr){
-            prev = slow;
             slow = slow->next;
             fast = fast->next->next;
         }
-        return prev;
+        return slow;
     }
     ListNode* merge(ListNode* lefthead, ListNode* righthead){
         ListNode* dummy = new ListNode(-1);
