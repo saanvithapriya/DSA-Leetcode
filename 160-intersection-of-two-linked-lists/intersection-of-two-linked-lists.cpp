@@ -12,8 +12,8 @@ public:
         ListNode* p1 = headA;
         ListNode* p2 = headB;
         while(p1!=p2){
-            p1 = (p1==nullptr) ? headA : p1->next;
-            p2 = (p2==nullptr) ? headB : p2->next;
+            p1 = (p1==NULL) ? headA : p1->next;
+            p2 = (p2==NULL) ? headB : p2->next;
         }
         return p1;
     }
