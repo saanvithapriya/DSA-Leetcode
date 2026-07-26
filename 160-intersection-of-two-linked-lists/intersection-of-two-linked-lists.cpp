@@ -14,8 +14,6 @@ public:
         while(p1!=p2){
             p1 = (p1==nullptr) ? headA : p1->next;
             p2 = (p2==nullptr) ? headB : p2->next;
-            if(p1==p2)
-                return p1;
         }
         return p1;
     }
